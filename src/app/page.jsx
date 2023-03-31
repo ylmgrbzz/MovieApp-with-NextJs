@@ -16,7 +16,7 @@ const page = async ({ searchParams }) => {
   console.log("data", data);
 
   return (
-    <div>
+    <div className="flex items-center justify-center flex-wrap gap-3">
       {data?.results?.map((dt, i) => (
         <Movies key={i} dt={dt} />
       ))}
