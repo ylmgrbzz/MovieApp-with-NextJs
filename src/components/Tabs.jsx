@@ -13,7 +13,7 @@ const Tabs = () => {
     },
     {
       name: "Top Lasted",
-      url: "lates",
+      url: "latest",
     },
     {
       name: "Yakında Gelecekler",
