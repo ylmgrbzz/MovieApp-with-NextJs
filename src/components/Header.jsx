@@ -24,6 +24,7 @@ const Header = () => {
     if (e.key === "Enter" && keyword.length >= 3) {
       router.push(`/search/${keyword}`);
       // window.location.href = `/search/${keyword}`;
+      setKeyword("");
     }
   };
 
@@ -34,6 +35,7 @@ const Header = () => {
       </div>
       <div className="flex flex-1 bg-transparent items-center gap-2 border p-3 rounded-lg">
         <input
+          value={keyword}
           onKeyDown={searchFunc}
           onChange={(e) => setKeyword(e.target.value)}
           className="outline-none flex-1"
