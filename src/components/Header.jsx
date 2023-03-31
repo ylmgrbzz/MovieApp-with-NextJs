@@ -1,6 +1,7 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import MenuItem from "./MenuItem";
+import ThemeComp from "./ThemeComp";
 
 const Header = () => {
   const menu = [
@@ -26,6 +27,7 @@ const Header = () => {
         />
         <BiSearch size={25} />
       </div>
+      <ThemeComp />
       {menu.map((mn, i) => (
         <MenuItem mn={mn} key={i} />
       ))}
