@@ -2,6 +2,7 @@ import react from "react";
 import "./global.css";
 import Header from "@/components/Header";
 import Providers from "./Providers";
+import Tabs from "@/components/Tabs";
 
 export const metadata = {
   title: "Next.js",
@@ -14,6 +15,7 @@ function Layout({ children }) {
       <body>
         <Providers>
           <Header />
+          <Tabs />
           {children}
         </Providers>
       </body>

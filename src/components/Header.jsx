@@ -19,7 +19,7 @@ const Header = () => {
       <div className="bg-amber-600 rounded-lg p-3 text-2xl font-bold ">
         MovieApp
       </div>
-      <div className="flex flex-1 items-center gap-2 border p-3 rounded-lg">
+      <div className="flex flex-1 bg-transparent items-center gap-2 border p-3 rounded-lg">
         <input
           placeholder="Arama Yap"
           className="outline-none flex-1"
