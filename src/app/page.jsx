@@ -1,3 +1,4 @@
+import Movies from "@/components/Movies";
 import React from "react";
 
 const page = async ({ searchParams }) => {
@@ -16,8 +17,9 @@ const page = async ({ searchParams }) => {
 
   return (
     <div>
-      {" "}
-      <h1 className="text-3xl font-bold underline">veri çekme alanı</h1>
+      {data?.results?.map((dt, i) => (
+        <Movies key={i} dt={dt} />
+      ))}
     </div>
   );
 };
